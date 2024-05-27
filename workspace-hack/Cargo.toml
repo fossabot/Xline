@@ -29,7 +29,9 @@ madsim-tokio = { git = "https://github.com/Phoenix500526/madsim.git", branch = "
 madsim-tonic = { git = "https://github.com/Phoenix500526/madsim.git", branch = "update-tonic", default-features = false, features = ["tls"] }
 memchr = { version = "2" }
 num-traits = { version = "0.2", default-features = false, features = ["i128", "std"] }
-opentelemetry_sdk = { version = "0.22", features = ["metrics", "rt-tokio"] }
+opentelemetry = { version = "0.23", features = ["metrics"] }
+opentelemetry_sdk-2b5c6dc72f624058 = { package = "opentelemetry_sdk", version = "0.23", features = ["metrics", "rt-tokio"] }
+opentelemetry_sdk-3c51e837cfc5589a = { package = "opentelemetry_sdk", version = "0.22", default-features = false, features = ["metrics", "rt-tokio", "trace"] }
 petgraph = { version = "0.6" }
 predicates = { version = "3", default-features = false, features = ["diff"] }
 serde = { version = "1", features = ["derive", "rc"] }
